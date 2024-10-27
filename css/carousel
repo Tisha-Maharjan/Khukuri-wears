@@ -1,0 +1,128 @@
+/* ******************************** */
+/* CAROUSEL SECTION */
+/* ******************************** */
+
+.carousel-container {
+  width: 100%;
+  height: 50rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* background-color: #e4c77d; */
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.carousel-img {
+  margin-bottom: 3.6rem;
+  margin-top: 2rem;
+  /* width: 50%; */
+  /* max-width: 200%;
+  max-height: 90%; */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  /* margin-bottom: 5rem; */
+  list-style: none;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #77604d;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #3d1c01;
+}
+
+/* Add additional styling for navigation buttons if needed */
+.btn {
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--left {
+  /* in relation to Parent element */
+  left: 3%;
+  top: 50%;
+
+  /* in relation to element itself*/
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  right: 3%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #3d1c01;
+}
+
+<section class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="khukuriwears/carousel-1.png" alt="Maria de Almeida" class="carousel-img" />
+        </div>
+        <div class="carousel-item">
+          <img src="khukuriwears/carousel-2.png" alt="Maria de Almeida" class="carosuel-img" />
+        </div>
+        <div class="carousel-item">
+          <img src="khukuriwears/carousel-1.jpg" alt="Maria de Almeida" class="carosuel-img" />
+        </div>
+      </div>
+
+
+      <button class="btn btn--left carousel-button prev" onclick="prevSlide()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="btn-icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </button>
+
+      <button class="btn btn--right carousel-button next" onclick="nextSlide()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="btn-icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </button>
+
+      <ul class="carousel-dots"></ul>
+
+      <script src="javascript/script.js"></script>
+    </section> 

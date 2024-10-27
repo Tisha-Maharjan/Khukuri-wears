@@ -1,0 +1,686 @@
+/* ******************************** *
+/* ADMIN LOGIN */
+/* ******************************** */
+.heading-secondary {
+  /* margin-bottom: 6.4rem; */
+  margin: 3rem 0 !important;
+}
+
+.admin-login {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0;
+  /* background-color: #f9f3e2; */
+  background: hsla(27, 21%, 38%, 1);
+
+  background: linear-gradient(45deg, hsla(27, 21%, 38%, 1) 0%, hsla(43, 66%, 79%, 1) 52%);
+  
+  background: -moz-linear-gradient(45deg, hsla(27, 21%, 38%, 1) 0%, hsla(43, 66%, 79%, 1) 52%);
+  
+  background: -webkit-linear-gradient(45deg, hsla(27, 21%, 38%, 1) 0%, hsla(43, 66%, 79%, 1) 52%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#77604D", endColorstr="#EDDAA8", GradientType=1 );
+  width: 100%;
+  height: 100vh;
+  /* height: 90rem; */
+}
+
+.login-container{
+  height: 45rem;
+  width: 45rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* margin-top: -5px; */
+ 
+  border-radius: 1.5rem;
+}
+
+.main-login-icon {
+  height: 12rem;
+  width: 12rem;
+  color: #333;
+  /* background-color: #231d1d; */
+}
+
+.login-form {
+  width: 100%;
+  height: 13.5rem;
+  /* background-color: #fff; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0.1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-icon {
+  height: 2.6rem;
+  width: 2.6rem;
+  color: #333;
+}
+
+.username-box,
+.password-box {
+  width: 24rem;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #333;
+  box-sizing: border-box;
+}
+
+.login {
+  padding: 3rem 0;
+  /* background-color: #000; */
+  width: 100%;
+  height: 10rem;
+  text-align: center;
+}
+
+.login-btn {
+  font-size: 1.8rem;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+.login-btn:hover {
+  background-color: #555;
+}
+
+.register {
+  font-size: 1.8rem;
+  text-align: center;
+  /* padding: 2rem; */
+  /* border-radius: 8px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ******************************** */
+/* HEADER */
+/* ******************************** */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eddaa8;
+
+  /* because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  width: 15rem;
+  height: 15rem;
+}
+
+/* ******************************** */
+/* NAVIGATION */
+/* ******************************** */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main-nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #462d1a;
+  position: absolute;
+  bottom: -2px; /* Adjust this value to control the line's position */
+  left: 0;
+  transition: width 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Change the line width when hovering over the link */
+.main-nav-link:hover::after {
+  width: 100%;
+}
+.main-nav-link:active::after {
+  width: 100%;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #462d1a;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #462d1a;
+}
+
+.main-nav-link.nav-login:link,
+.main-nav-link.nav-login:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #3d1c01;
+}
+
+/* element which includes both these mentioned classes: main-nav-link, nav-cta */
+.main-nav-link.nav-login:hover,
+.main-nav-link.nav-login:active {
+  background-color: #311601;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* ******************************** */
+/* DASHBOARD */
+/* ******************************** */
+.dashboard-main {
+  /* height: 100%; */
+  background-color: #faf5e8;
+}
+.main-content {
+  width: 100%;
+  /* height: 100%; */
+  /* background-color: #faf5e8; */
+  padding: 5rem;
+  margin-top: 0px;
+  /* margin-left: 500px; */
+}
+
+.main {
+  width: 750px;
+  /* height: fit-content; */
+  /* border: 1px solid red; */
+  float: right;
+}
+
+.col-4 {
+  width: 25rem;
+  height: 15rem;
+  background-color: #f3f1f1;
+  margin: 1%;
+  padding: 2%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+  /* border-right: 2px solid black; */
+}
+
+.col-4:hover {
+  transform: translateY(-0.6rem);
+}
+
+.dashboard-text {
+  font-size: 1.6rem;
+}
+
+/* .dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #f3f1f1;
+  height: 20rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  padding: 3rem;
+} */
+
+.text-center {
+  text-align: center;
+}
+
+.text-center.image img {
+  width: 12rem;
+  height: 10.5rem;
+}
+
+/* .text-center.products {
+  width: 18rem;
+}
+.text-center.address {
+  width: 10rem;
+} */
+
+/* .text-center.order-date {
+  width: 12rem;
+} */
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+table {
+  border: 1px solid #f5f5f5;
+  padding: 20px;
+  border-radius: 1%;
+  border-spacing: 0;
+  margin: auto;
+}
+
+.tbl-full {
+  margin-top: 2rem;
+  width: 100%;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* .tbl-full-order {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+
+  font-size: 1.8rem;
+  text-align: center;
+} */
+
+.tbl-30 {
+  width: 30%;
+  /* column-gap: 100px; */
+}
+
+/* .tbl-30 tr td {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+} */
+
+table tr th {
+  border-bottom: 1px solid #333333;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  background-color: #f3f1f1;
+}
+
+table tr td {
+  padding: 2.5rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+tr {
+  background-color: #e9e8e8;
+}
+
+/* tr:nth-child(odd) {
+  background-color: white;
+} */
+
+/* hover in data of table */
+.hover:hover {
+  background-color: #f5f5f5;
+}
+
+/* add + symbol */
+.add-button {
+  position: absolute;
+  /* right: 0; */
+  margin-left: 115rem;
+}
+
+.add-button::after {
+  content: "+";
+  font-size: 2rem;
+}
+
+.btn-primary {
+  /* text-align: center; */
+  /* padding: 4px 8px; */
+  background-color: #333333;
+  font-size: 1.2rem;
+  padding: 1%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: rgba(58, 57, 57, 0.8);
+}
+
+.btn-secondary {
+  background-color: #7bed9f;
+  padding: 1%;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.btn-secondary:hover {
+  background-color: #2ed573;
+}
+
+.btn-danger {
+  background-color: #ff6b81;
+  padding: 1%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.btn-danger:hover {
+  background-color: #ff4757;
+}
+
+.box {
+  border-radius: 5px;
+}
+
+.success {
+  color: #2ed573;
+}
+
+.error {
+  color: #ff4757;
+}
+
+/* css for form of add */
+.tbl-30 .box {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+/* .wrapper {
+  padding: 0;
+} */
+
+/* .wrapper .add {
+  background-color: #f2f2f2;
+  width: 100%; */
+/* padding: 50px;
+  margin-left: 450px; */
+/* } */
+
+/* .add .h1 {
+  text-align: center;
+  font-family: Gabriola;
+}
+
+textarea::placeholder {
+  position: absolute;
+  bottom: 0;
+} */
+
+/* Add-admin */
+.add-form {
+  /* margin-left: 10rem; */
+  width: 100%;
+  padding: 6rem 0;
+  /* background-color: #f9f3e2; */
+}
+
+.admin-form {
+  width: 100%;
+  height: 12rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0.1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-label {
+  display: inline-block;
+  width: 10rem;
+  /* height: 10rem; */
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.add-box {
+  width: 20rem;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #333;
+  box-sizing: border-box;
+}
+
+/* Update-password */
+.update-password-label {
+  display: inline-block;
+  width: 15rem;
+  /* height: 10rem; */
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.update-password-btn {
+  font-size: 1.8rem;
+  width: 20rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+.update-password-btn:hover {
+  background-color: #555;
+}
+
+/* Update-admin */
+.update-admin-label {
+  display: inline-block;
+  width: 15rem;
+  /* height: 10rem; */
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.update-admin-btn {
+  font-size: 1.8rem;
+  width: 15rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+.update-admin-btn:hover {
+  background-color: #555;
+}
+
+/* Update-user */
+.update-user.heading-secondary {
+  margin: 0;
+}
+.update-user-btn {
+  margin-left: 10rem;
+  font-size: 1.8rem;
+  width: 15rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+.update-user-btn:hover {
+  background-color: #555;
+}
+
+/* Add-category & add-products*/
+.add-category.heading-secondary,
+.add-product.heading-secondary {
+  margin: 0;
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+
+.add-category-form {
+  width: 100%;
+  height: 14rem;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  /* margin-top: 0; */
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-product-label,
+.add-category-label {
+  display: inline-block;
+  width: 16rem;
+  /* height: 10rem; */
+  font-size: 1.6rem;
+  color: #333;
+}
+
+input[type="radio"] {
+  margin-left: 4rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-product-btn,
+.add-category-btn {
+  margin-left: 10rem;
+  font-size: 1.8rem;
+  width: 15rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+.add-product-btn:hover,
+.add-category-btn:hover {
+  background-color: #555;
+}
+
+/* Update-category, update-products */
+.update-category-form {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.update-category-btn,
+.update-product-btn {
+  margin-left: 10rem;
+  font-size: 1.8rem;
+  width: 15rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+.update-category-btn:hover,
+.update-product-btn:hover {
+  background-color: #555;
+}
+
+/* add-products */
+.add-product-form {
+  width: 100%;
+  height: 12rem;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  /* margin-top: 0; */
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* update-products */
+.update-product-form {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  /* margin-top: 0; */
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* bulk_update */
+.update-order.heading-secondary {
+  margin: 0;
+}
+
+.update-order-form {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.update-order-btn {
+  margin-left: 10rem;
+  font-size: 1.8rem;
+  width: 15rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+.update-order-btn:hover {
+  background-color: #555;
+}
